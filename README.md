@@ -1,0 +1,44 @@
+# PanHub · 全网最全的网盘搜索
+
+> 一个搜索框，搜遍全网网盘资源 —— 即搜即得、聚合去重、轻量部署
+
+**在线体验**：<https://panhub.shenzjd.com>
+
+## ✨ 核心特性
+
+- **多源聚合**：80+ Telegram 频道 + 20+ 第三方插件，聚合去重、智能排序、插件熔断隔离
+- **影视榜单**：豆瓣 12 分类，点击即可一键搜索
+- **链接探活**：服务端检测失效 / 需密码链接，自动标记角标
+- **实时热搜**：聚合全网搜索词，词云展示 + 每日榜单
+- **多端部署**：Docker / Vercel / Cloudflare Workers
+
+## 🚀 快速开始
+
+```bash
+# Docker（数据持久化）
+docker run -d -p 4000:4000 -v /root/panhub/data:/app/data \
+  ghcr.io/wu529778790/panhub.shenzjd.com:latest
+```
+
+- Vercel / Cloudflare 均支持一键部署，构建命令 `npm run build`
+- **热搜依赖 Turso**：配置 `TURSO_URL` / `TURSO_AUTH_TOKEN`（libsql）后启用，未配置不影响搜索等核心功能
+- 本地开发：`npm install && npm run dev`；测试：`npm test`
+
+## 📦 支持平台
+
+阿里云盘 / 夸克 / 百度网盘 / 115 / 迅雷 / UC / 天翼云盘 / 123 网盘 / 移动云盘 / 磁力链接
+
+## 🤝 合作伙伴
+
+- [AI 全自动推广拓客 - 智能外呼机器人](https://bizbot.zvo.cn)
+
+## 🛡️ 免责声明
+
+- 不存储、不传播任何受版权保护的内容；资源链接均来自公开网络
+- 请遵守当地法律法规与平台使用条款；侵权问题请联系源站处理
+
+## 📄 版权声明
+
+Copyright © 2025-2026 shenzjd. All rights reserved.
+
+本仓库代码仅供学习参考，未经授权禁止用于任何商业用途或二次分发。
